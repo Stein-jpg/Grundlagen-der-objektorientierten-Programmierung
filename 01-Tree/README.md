@@ -11,4 +11,5 @@ Danach habe ich os.scandir() implementiert und musste es erstmal mit "import os"
 ![screen1](screenshot-2.jpg) ![screen1.1](screenshot-2.1.jpg)
 
 Zuletzt wurde mein Code mit der Zeile "entries = sorted(entries, key=lambda f: f.name.lower())" erweiter um sicherzustellen, dass es auch Sortiert wird. Leider kann ich das nur schlecht veranschaulichen, weil meine IDE die Dateien automatisch sortiert deswegen zeige ich es mit dem parameter Reverse: True:
+
 ![screen1](screenshot-3.jpg) ![screen1.1](screenshot-3.1.jpg)
