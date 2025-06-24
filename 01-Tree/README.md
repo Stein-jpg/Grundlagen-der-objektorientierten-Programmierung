@@ -23,7 +23,7 @@ print_directory(".")
 <details>
 <summary>Console</summary>
 
-![screen1.1](screenshot-1.1.jpg)
+![screen1.1](./screenshots/screenshot-1.1.jpg)
 
 </details>
 
@@ -51,7 +51,7 @@ print_directory(".")
 <details>
 <summary>Console</summary>
 
-![screen2.1](screenshot-2.1.jpg)
+![screen2.1](./screenshots/screenshot-2.1.jpg)
 
 </details>
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 <details>
 <summary>Console</summary>
 
-![screen3.1](screenshot-3.1.jpg)
+![screen3.1](./screenshots/screenshot-3.1.jpg)
 
 </details>
 
@@ -164,7 +164,7 @@ if __name__ == "__main__":
 <details>
 <summary>Console</summary>
 
-![screen4.1](screenshot-4.1.jpg)
+![screen4.1](./screenshots/screenshot-4.1.jpg)
 
 </details>
 
@@ -265,6 +265,6 @@ if __name__ == "__main__":
 <details>
 <summary>Console + Überprüfung</summary>
 
-![screen5.1](screenshot-5.1.jpg) ![screen5.2](screenshot-5.2.jpg)
+![screen5.1](./screenshots/screenshot-5.1.jpg)
 
 </details>

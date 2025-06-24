@@ -45,5 +45,5 @@ def print_directory(path, indentation_level=0):
 
 
 if __name__ == "__main__":
-    files, dirs = print_directory(".")
+    files, dirs = print_directory("./01-Tree")
     print(f"\n {files} files, {dirs} directories")
