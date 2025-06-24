@@ -8,6 +8,9 @@ def print_directory(path, indentation_level=0):
     VERT = chr(9474)  # │
     DASH = chr(9472)  # ─
 
+    n_files = 0
+    n_dirs = 0
+
     with os.scandir(path) as entries:
         # iterator in Liste Umwandeln
         entries = list(entries)
@@ -26,8 +29,21 @@ def print_directory(path, indentation_level=0):
 
             # Wenn weiteres Directory wiederhole print_directory (rekursiv)
             if entry.is_dir():
-                print_directory(entry.path, indentation_level + 1)
+                # dieses Verzeichnis mitzählen
+                n_dirs += 1
+                # rekursiv Unterzählungen holen
+                child_files, child_dirs = print_directory(
+                    entry.path, indentation_level + 1
+                )
+                n_files += child_files
+                n_dirs += child_dirs
+            else:
+                # Dateien zählen
+                n_files += 1
+
+    return n_files, n_dirs
 
 
 if __name__ == "__main__":
-    print_directory(".")
+    files, dirs = print_directory(".")
+    print(f"\n {files} files, {dirs} directories")
